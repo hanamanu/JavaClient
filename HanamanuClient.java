@@ -47,7 +47,7 @@ public class HanamanuClient {
 		this.appSecretKey = appSecretKey.trim();
 	}
 	
-	public void SendEvent(String metricName, BigDecimal value) throws HanamanuClientException {
+	public void sendEvent(String metricName, BigDecimal value) throws HanamanuClientException {
 		
 		if (metricName == null || metricName.trim().isEmpty()) throw new IllegalArgumentException("metricName cannot be null");
 		if (value == null) throw new IllegalArgumentException("value cannot be null");
